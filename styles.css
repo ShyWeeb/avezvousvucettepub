@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --base-font-size: 30px;
+    --background-color: rgba(40, 40, 40, 1);
+    --font-color: white;
+    --font-family: "Roboto", serif;
+    --spacing-inline: 50px;
+    --avatar-border-radius: 50%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    font-size: var(--base-font-size);
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+#status {
+    color: red;
+}
+
+#e-mail {
+    color: var(--font-color);
+    text-decoration: underline;
+}
+
+#made-by {
+    padding-bottom: 20px;
+}
+
+#made-by-socials {
+    padding-block: 10px;
+}
+
+#made-by-socials img {
+    margin: 0 20px 20px 0;
+}
+
+#made-by-avatar {
+    border-radius: var(--avatar-border-radius);
+}
+
+#flyer {
+    margin-block: 50px;
+    width: 70%;
+}
+
+iframe {
+    margin: auto;
+    aspect-ratio: 16 / 9;
+}
+
+header {
+    margin-inline: var(--spacing-inline);
+}
+
+header h1 {
+    font-size: 60px;
+}
+
+/* General Media Query Adjustments */
+@media only screen and (min-width: 780px) {
+    iframe {
+        width: 75%;
+    }
+
+    #e-mail {
+        font-size: 32px;
+    }
+
+    #socials img,
+    #made-by-socials img {
+        max-width: 10%;
+    }
+
+    #made-by-avatar {
+        max-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 779px) {
+    iframe {
+        width: 80%;
+    }
+
+    #socials img,
+    #made-by-socials img {
+        max-width: 15%;
+    }
+
+    #made-by-avatar {
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    iframe {
+        width: 90%;
+    }
+
+    #e-mail {
+        font-size: 24px;
+    }
+
+    #socials img,
+    #made-by-socials img {
+        max-width: 20%;
+    }
+
+    #made-by-avatar {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    iframe {
+        width: 100%;
+    }
+
+    #e-mail {
+        font-size: 18px;
+    }
+
+    #socials img,
+    #made-by-socials img {
+        max-width: 25%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header,
+    #contact,
+    #disclaimer,
+    #made-by {
+        margin-inline: 0;
+    }
+
+    #socials img,
+    #made-by-socials img {
+        max-width: 30%;
+    }
+}
